@@ -20,7 +20,7 @@ const membriTeam = [
         "foto": "wayne-barnett-founder-ceo.jpg"
     },
     {
-        "nome": "Angelo Caroll",
+        "nome": "Angela Caroll",
         "ruolo": "Chief Editor",
         "foto": "angela-caroll-chief-editor.jpg"
     },
