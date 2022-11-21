@@ -46,18 +46,18 @@ const membriTeam = [
     }
 ];
 
-//Stampo info membri
+//Stampo chiave membri
 for (let chiave in membriTeam[0])
     document.getElementById("membri").innerHTML += `
-        <div class="info">${chiave}</div>`;
+        <div class="chiave">${chiave}</div>`;
 
 
-//Stampo ruoli membri
+//Stampo info membri
 for (let i = 0; i < membriTeam.length; i++) {
     let ruolo = membriTeam[i];
 
     for (let chiave in ruolo)
         document.getElementById("membri").innerHTML += `
-            <div class="ruolo">${ruolo[chiave]}</div>`;
+            <div class="info">${ruolo[chiave]}</div>`;
 
 }
