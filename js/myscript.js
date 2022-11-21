@@ -10,3 +10,54 @@
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
 // Organizzare i singoli membri in card/schede
+
+
+// Array di oggetti dei membri
+const membriTeam = [
+    {
+        "nome": "Wayne Barnett",
+        "ruolo": "Founder & CEO",
+        "foto": "wayne-barnett-founder-ceo.jpg"
+    },
+    {
+        "nome": "Angelo Caroll",
+        "ruolo": "Chief Editor",
+        "foto": "angela-caroll-chief-editor.jpg"
+    },
+    {
+        "nome": "Walter Gordon",
+        "ruolo": "Office Manager",
+        "foto": "walter-gordon-office-manager.jpg"
+    },
+    {
+        "nome": "Angela Lopez",
+        "ruolo": "Social Media Manager",
+        "foto": "angela-lopez-social-media-manager.jpg"
+    },
+    {
+        "nome": "Scott Estrada",
+        "ruolo": "Developer",
+        "foto": "scott-estrada-developer.jpg"
+    },
+    {
+        "nome": "Barbara Ramos",
+        "ruolo": "Graphic Designer",
+        "foto": "barbara-ramos-graphic-designer.jpg"
+    }
+];
+
+//Stampo info membri
+for (let chiave in membriTeam[0])
+    document.getElementById("membri").innerHTML += `
+        <div class="info">${chiave}</div>`;
+
+
+//Stampo ruoli membri
+for (let i = 0; i < membriTeam.length; i++) {
+    let ruolo = membriTeam[i];
+
+    for (let chiave in ruolo)
+        document.getElementById("membri").innerHTML += `
+            <div class="ruolo">${ruolo[chiave]}</div>`;
+
+}
