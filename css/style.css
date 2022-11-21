@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#membri {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+#membri div {
+    padding: 5px;
+    width: calc(100% / 3);
+    border-top: 1px solid #ccc;
+}
+
+#membri .info {
+    border-top: 0;
+}
