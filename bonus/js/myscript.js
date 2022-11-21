@@ -54,7 +54,7 @@ for (let i = 0; i < membriTeam.length; i++) {
 
     document.getElementById("membri").innerHTML += `
         <div class="card">
-            <img src="img/${info.foto}" alt="${info.nome}" class="immagine"> 
+            <img src="img/${info.foto}" alt="${info.nome}"> 
             <div class="info"> 
                 <div class="nome">${info.nome}</div>
                 <div class="ruolo">${info.ruolo}</div>
