@@ -54,10 +54,10 @@ for (let chiave in membriTeam[0])
 
 //Stampo info membri
 for (let i = 0; i < membriTeam.length; i++) {
-    let ruolo = membriTeam[i];
+    let info = membriTeam[i];
 
-    for (let chiave in ruolo)
+    for (let chiave in info)
         document.getElementById("membri").innerHTML += `
-            <div class="info">${ruolo[chiave]}</div>`;
+            <div class="info">${info[chiave]}</div>`;
 
 }
