@@ -46,18 +46,18 @@ const membriTeam = [
     }
 ];
 
-//Stampo chiave membri
-for (let chiave in membriTeam[0])
-    document.getElementById("membri").innerHTML += `
-        <div class="chiave">${chiave}</div>`;
 
-
-//Stampo info membri
+//Stampo contenuto card
 for (let i = 0; i < membriTeam.length; i++) {
-    let ruolo = membriTeam[i];
 
-    for (let chiave in ruolo)
-        document.getElementById("membri").innerHTML += `
-            <div class="info">${ruolo[chiave]}</div>`;
+    let info = membriTeam[i];
 
+    document.getElementById("membri").innerHTML += `
+        <div class="card">
+            <img src="img/${info.foto}" alt="${info.nome}" class="immagine"> 
+            <div class="info"> 
+                <div class="nome">${info.nome}</div>
+                <div class="ruolo">${info.ruolo}</div>
+            </div>
+        </div>`;
 }
